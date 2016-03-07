@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+ul, li {
+  lsit-style: none; }
+
+a {
+  text-decoration: none; }
+
+.header_bg {
+  background: url(../img/bg_slider.jpg) no-repeat;
+  height: 100%;
+  text-align: center; }
+
+.header_content1 {
+  background-color: rgba(25, 160, 123, 0.3);
+  padding: 180px; }
+
+.header_content1 h1 {
+  font-family: Grunwald;
+  font-size: 80px;
+  padding: 120px 0 0 0;
+  color: #fff; }
+
+.header_content2 {
+  padding: 70px;
+  color: #fff; }
+
+.header_content2 p {
+  font-size: 18px; }
+
+.header_content2 h1 {
+  font-size: 120px; }
+
+.header_content2 h2 {
+  font-size: 35px; }
+
+.header_btn {
+  padding: 50px; }
+
+.btn_custom {
+  font-size: 20px;
+  background-color: #e8504f;
+  border: 1px solid #e8504f;
+  padding: 30px 50px;
+  outline: none;
+  transition: all 0.5s ease; }
+
+.btn_custom:hover {
+  background-color: transparent;
+  border: 1px solid #e8504f; }
+
+.nav_bg {
+  margin: -14px;
+  background-color: #272822;
+  padding: 15px; }
+
+.nav_names {
+  margin-bottom: -5px; }
+
+.nav_names h1 {
+  font-family: grunwald;
+  font-size: 30px; }
+
+.nav_names h1 a {
+  color: #cccccc;
+  text-decoration: none; }
+
+.nav_navbar {
+  padding-top: 15px; }
+
+.nav_navbar ul li {
+  list-style: none;
+  float: left; }
+
+.nav_navbar ul li a {
+  padding: 28px 16px 26px 18px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #272822;
+  transition: background-color 0.5s ease; }
+
+.nav_navbar ul li a:hover {
+  border-top: 4px solid #e8504f;
+  color: #e85049;
+  background-color: #1E1F1C; }
+
+.nav_logo img {
+  padding-top: 10px;
+  float: right !important; }
+
+.nav_bottom {
+  text-align: center;
+  padding: 100px;
+  background-color: #f3f3f3; }
+
+.welcome_content p {
+  padding: 30px;
+  font-size: 22px; }
+
+.content_area {
+  padding: 50px;
+  text-align: center; }
+
+.main_content {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  height: 300px;
+  transition: all 0.5s ease; }
+
+.main_content:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  border: none; }
+
+/*# sourceMappingURL=style.css.map */
