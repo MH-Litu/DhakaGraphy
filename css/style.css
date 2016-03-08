@@ -14,7 +14,6 @@ a {
   text-align: center; }
 
 .header_content1 {
-  background-color: rgba(25, 160, 123, 0.3);
   padding: 180px; }
 
 .header_content1 h1 {
@@ -24,7 +23,7 @@ a {
   color: #fff; }
 
 .header_content2 {
-  padding: 70px;
+  padding: 63px;
   color: #fff; }
 
 .header_content2 p {
@@ -52,12 +51,11 @@ a {
   border: 1px solid #e8504f; }
 
 .nav_bg {
-  margin: -14px;
   background-color: #272822;
   padding: 15px; }
 
 .nav_names {
-  margin-bottom: -5px; }
+  margin-bottom: -15px; }
 
 .nav_names h1 {
   font-family: grunwald;
@@ -75,7 +73,7 @@ a {
   float: left; }
 
 .nav_navbar ul li a {
-  padding: 28px 16px 26px 18px;
+  padding: 28px 20px 30px 18px;
   color: #ffffff;
   text-decoration: none;
   background-color: #272822;
@@ -103,15 +101,16 @@ a {
   padding: 50px;
   text-align: center; }
 
+.content_area li {
+  list-style: none; }
+
 .main_content {
-  background-color: #ffffff;
   border: 1px solid #ffffff;
-  height: 300px;
   transition: all 0.5s ease; }
 
 .main_content:hover {
-  background-color: #ffffff;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

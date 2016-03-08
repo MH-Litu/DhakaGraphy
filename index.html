@@ -6,6 +6,16 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/sinister.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="js/fancyBox/jquery.fancybox.css" type="text/css" media="screen" />
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/fancyBox/jquery.fancybox.pack.js"></script>
 </head>
 <body>
 	<header class="container-fluid header_bg">
@@ -28,24 +38,31 @@
 		</div>
 	</header>
 
-	<div class="container-fluid nav_bg">
+	<div id="navbar-main" class="container-fluid nav_bg">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-3 nav_names">
+			<!--<div class="navbar-header">
+			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+			</div>-->
+			<div class="col-md-3 nav_names">
 					<h1><a href="#">DhakaGraphy</a></h1>
 				</div>
-				<div class="col-md-6">
-					<nav class="nav_navbar">
-						<ul>
-							<li><a href="">HOME</a></li>
-							<li><a href="">ABOUT</a></li>
-							<li><a href="">SERVICES</a></li>
-							<li><a href="">NEWS</a></li>
-							<li><a href="">BLOG</a></li>
-							<li><a href="">CONTACT</a></li>
-						</ul>
-					</nav>
-				</div>
+			<div class="col-md-6">
+				<nav class="nav_navbar">
+					<ul>
+						<li><a href="">HOME</a></li>
+						<li><a href="">ABOUT</a></li>
+						<li><a href="">SERVICES</a></li>
+						<li><a href="">NEWS</a></li>
+						<li><a href="">BLOG</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
 				<div class="col-md-3 nav_logo">
 					<img src="img/logo_mini.png">
 				</div>
@@ -58,28 +75,90 @@
 			<div class="row">
 				<div class="welcome_content">
 					<h1>WELCOME TO THE WALL</h1>
-					<p>This is a paragraph providing the information of the activities of this site. Paragraph continues...This is a paragraph providing the information of the activities of this site. Paragraph continues...This is a paragraph providing the information of the activities of this site. Paragraph continues...This is a paragraph providing the information of the activities of this site. Paragraph continues...</p>
+					<p>This is a paragraph providing the information of the activities of this site. Paragraph continues...This is a paragraph providing the information of the activities of this site. Paragraph continues...</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="container-fluid content_area">
-		<div class="container text-center">
-			<div class="row">
-				<div class="col-sm-4 main_content">
-					<h3>WALL OF SHAME</h3>
-				</div>
-				<div class="col-sm-4 main_content">
-					<h3>WALL OF PRIDE</h3>
-				</div>
-				<div class="col-sm-4 main_content">
-					<h3>WALL OF IDEAS</h3>
-				</div>
-			</div>
+			<div class="container text-center">
+				<li class="col-md-4 animated" data-animation-delay="1.0s" data-animation="fadeIn">
+		            <div class="blog-post">
+		                <div class="ImageWrapper ContentWrapperNe chrome-fix main_content">
+		                    <img class="img-responsive" src="img/wall2.png" alt="">
+		                    <div class="ContentNe">
+		                        <div class="Content">
+		                            <h2>
+		                                WALL OF SHAME
+		                            </h2>
+		                            <p>
+		                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		                            </p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </li>
+		        <li class="col-md-4 animated" data-animation-delay="1.0s" data-animation="fadeIn">
+		            <div class="blog-post">
+		                <div class="ImageWrapper ContentWrapperNe chrome-fix main_content">
+		                    <img class="img-responsive" src="img/wall2.png" alt="">
+		                    <div class="ContentNe">
+		                        <div class="Content">
+		                            <h2>
+		                                WALL OF PRIDE
+		                            </h2>
+		                            <p>
+		                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		                            </p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </li>
+		        <li class="col-md-4 animated" data-animation-delay="1.0s" data-animation="fadeIn">
+		            <div class="blog-post">
+		                <div class="ImageWrapper ContentWrapperNe chrome-fix main_content">
+		                    <img class="img-responsive" src="img/wall2.png" alt="">
+		                    <div class="ContentNe">
+		                        <div class="Content">
+		                            <h2>
+		                                WALL OF IDEAS
+		                            </h2>
+		                            <p>
+		                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		                            </p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </li>
+		    </div>
 		</div>
-	</div>
+		
+		
 	</div>
 
+	<script>
+		/*! Main */
+		jQuery(document).ready(function($) {
+		  
+		    // Fixa navbar ao ultrapassa-lo
+		    var navbar = $('#navbar-main'),
+		    		distance = navbar.offset().top,
+		        $window = $(window);
+
+		    $window.scroll(function() {
+		        if ($window.scrollTop() >= distance) {
+		            navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+		          	$("body").css("padding-top", "70px");
+		        } else {
+		            navbar.removeClass('navbar-fixed-top');
+		            $("body").css("padding-top", "0px");
+		        }
+		    });
+		});
+	</script>
 	
 
 </body>
